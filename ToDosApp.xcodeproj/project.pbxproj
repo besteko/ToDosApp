@@ -9,21 +9,40 @@
 /* Begin PBXBuildFile section */
 		9A1733B72C01BBFD00E7D4CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1733B62C01BBFD00E7D4CC /* AppDelegate.swift */; };
 		9A1733B92C01BBFD00E7D4CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1733B82C01BBFD00E7D4CC /* SceneDelegate.swift */; };
-		9A1733BB2C01BBFD00E7D4CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1733BA2C01BBFD00E7D4CC /* ViewController.swift */; };
+		9A1733BB2C01BBFD00E7D4CC /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1733BA2C01BBFD00E7D4CC /* MainScreen.swift */; };
 		9A1733BE2C01BBFD00E7D4CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1733BC2C01BBFD00E7D4CC /* Main.storyboard */; };
 		9A1733C02C01BBFE00E7D4CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1733BF2C01BBFE00E7D4CC /* Assets.xcassets */; };
 		9A1733C32C01BBFE00E7D4CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1733C12C01BBFE00E7D4CC /* LaunchScreen.storyboard */; };
+		9A1733CB2C01CBBE00E7D4CC /* SaveScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1733CA2C01CBBE00E7D4CC /* SaveScreen.swift */; };
+		9A1733CD2C01CC5800E7D4CC /* UpdateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1733CC2C01CC5800E7D4CC /* UpdateScreen.swift */; };
+		9A1733D02C01D75A00E7D4CC /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A1733CF2C01D75A00E7D4CC /* Pacifico-Regular.ttf */; };
+		9A1733F42C02033B00E7D4CC /* ToDos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1733F32C02033B00E7D4CC /* ToDos.swift */; };
+		9A1733F62C0227DA00E7D4CC /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1733F52C0227DA00E7D4CC /* ToDoCell.swift */; };
+		9A8FAA432C031E4A00518ACF /* ToDosDaoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8FAA422C031E4A00518ACF /* ToDosDaoRepository.swift */; };
+		9A8FAA462C031EA500518ACF /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8FAA452C031EA500518ACF /* MainViewModel.swift */; };
+		9A8FAA482C031EB600518ACF /* SaveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8FAA472C031EB600518ACF /* SaveViewModel.swift */; };
+		9A8FAA4A2C031EC400518ACF /* UpdateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8FAA492C031EC400518ACF /* UpdateViewModel.swift */; };
+		9A8FAA4D2C03280200518ACF /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9A8FAA4C2C03280200518ACF /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9A1733B32C01BBFD00E7D4CC /* ToDosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1733B62C01BBFD00E7D4CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A1733B82C01BBFD00E7D4CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A1733BA2C01BBFD00E7D4CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A1733BA2C01BBFD00E7D4CC /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		9A1733BD2C01BBFD00E7D4CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A1733BF2C01BBFE00E7D4CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A1733C22C01BBFE00E7D4CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A1733C42C01BBFE00E7D4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1733CA2C01CBBE00E7D4CC /* SaveScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveScreen.swift; sourceTree = "<group>"; };
+		9A1733CC2C01CC5800E7D4CC /* UpdateScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateScreen.swift; sourceTree = "<group>"; };
+		9A1733CF2C01D75A00E7D4CC /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		9A1733F32C02033B00E7D4CC /* ToDos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDos.swift; sourceTree = "<group>"; };
+		9A1733F52C0227DA00E7D4CC /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		9A8FAA422C031E4A00518ACF /* ToDosDaoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosDaoRepository.swift; sourceTree = "<group>"; };
+		9A8FAA452C031EA500518ACF /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9A8FAA472C031EB600518ACF /* SaveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewModel.swift; sourceTree = "<group>"; };
+		9A8FAA492C031EC400518ACF /* UpdateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8FAA4D2C03280200518ACF /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +76,88 @@
 		9A1733B52C01BBFD00E7D4CC /* ToDosApp */ = {
 			isa = PBXGroup;
 			children = (
+				9A8FAA3D2C031CF200518ACF /* Data */,
+				9A1733CE2C01D6E100E7D4CC /* Fonts */,
 				9A1733B62C01BBFD00E7D4CC /* AppDelegate.swift */,
 				9A1733B82C01BBFD00E7D4CC /* SceneDelegate.swift */,
-				9A1733BA2C01BBFD00E7D4CC /* ViewController.swift */,
+				9A8FAA3C2C031CE100518ACF /* UI */,
 				9A1733BC2C01BBFD00E7D4CC /* Main.storyboard */,
 				9A1733BF2C01BBFE00E7D4CC /* Assets.xcassets */,
 				9A1733C12C01BBFE00E7D4CC /* LaunchScreen.storyboard */,
 				9A1733C42C01BBFE00E7D4CC /* Info.plist */,
 			);
 			path = ToDosApp;
+			sourceTree = "<group>";
+		};
+		9A1733CE2C01D6E100E7D4CC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9A1733CF2C01D75A00E7D4CC /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9A8FAA3C2C031CE100518ACF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9A8FAA442C031E7800518ACF /* ViewModel */,
+				9A8FAA402C031D3F00518ACF /* TableView */,
+				9A8FAA3F2C031D2800518ACF /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9A8FAA3D2C031CF200518ACF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9A8FAA412C031DF500518ACF /* Repo */,
+				9A8FAA3E2C031D0700518ACF /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9A8FAA3E2C031D0700518ACF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9A1733F32C02033B00E7D4CC /* ToDos.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9A8FAA3F2C031D2800518ACF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A1733BA2C01BBFD00E7D4CC /* MainScreen.swift */,
+				9A1733CA2C01CBBE00E7D4CC /* SaveScreen.swift */,
+				9A1733CC2C01CC5800E7D4CC /* UpdateScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A8FAA402C031D3F00518ACF /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				9A1733F52C0227DA00E7D4CC /* ToDoCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		9A8FAA412C031DF500518ACF /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				9A8FAA422C031E4A00518ACF /* ToDosDaoRepository.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		9A8FAA442C031E7800518ACF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9A8FAA452C031EA500518ACF /* MainViewModel.swift */,
+				9A8FAA472C031EB600518ACF /* SaveViewModel.swift */,
+				9A8FAA492C031EC400518ACF /* UpdateViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +176,9 @@
 			dependencies = (
 			);
 			name = ToDosApp;
+			packageProductDependencies = (
+				9A8FAA4C2C03280200518ACF /* RxSwift */,
+			);
 			productName = ToDosApp;
 			productReference = 9A1733B32C01BBFD00E7D4CC /* ToDosApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +207,9 @@
 				Base,
 			);
 			mainGroup = 9A1733AA2C01BBFD00E7D4CC;
+			packageReferences = (
+				9A8FAA4B2C03280200518ACF /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 9A1733B42C01BBFD00E7D4CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A1733C32C01BBFE00E7D4CC /* LaunchScreen.storyboard in Resources */,
+				9A1733D02C01D75A00E7D4CC /* Pacifico-Regular.ttf in Resources */,
 				9A1733C02C01BBFE00E7D4CC /* Assets.xcassets in Resources */,
 				9A1733BE2C01BBFD00E7D4CC /* Main.storyboard in Resources */,
 			);
@@ -138,9 +238,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A1733BB2C01BBFD00E7D4CC /* ViewController.swift in Sources */,
+				9A8FAA432C031E4A00518ACF /* ToDosDaoRepository.swift in Sources */,
+				9A8FAA4A2C031EC400518ACF /* UpdateViewModel.swift in Sources */,
+				9A1733CD2C01CC5800E7D4CC /* UpdateScreen.swift in Sources */,
+				9A1733BB2C01BBFD00E7D4CC /* MainScreen.swift in Sources */,
+				9A1733F62C0227DA00E7D4CC /* ToDoCell.swift in Sources */,
 				9A1733B72C01BBFD00E7D4CC /* AppDelegate.swift in Sources */,
+				9A1733CB2C01CBBE00E7D4CC /* SaveScreen.swift in Sources */,
 				9A1733B92C01BBFD00E7D4CC /* SceneDelegate.swift in Sources */,
+				9A8FAA482C031EB600518ACF /* SaveViewModel.swift in Sources */,
+				9A1733F42C02033B00E7D4CC /* ToDos.swift in Sources */,
+				9A8FAA462C031EA500518ACF /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +397,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDosApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ToDos;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -316,6 +425,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDosApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ToDos;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -356,6 +466,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A8FAA4B2C03280200518ACF /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A8FAA4C2C03280200518ACF /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A8FAA4B2C03280200518ACF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9A1733AB2C01BBFD00E7D4CC /* Project object */;
 }
