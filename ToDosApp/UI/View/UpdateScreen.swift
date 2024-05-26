@@ -10,7 +10,7 @@ import UIKit
 class UpdateScreen: UIViewController {
     @IBOutlet weak var textFieldName: UITextField!
     
-    var toDo:ToDos?
+    var toDo:ToDosModel?
     
     var viewModel = UpdateViewModel()
 
@@ -27,7 +27,7 @@ class UpdateScreen: UIViewController {
     }
     @IBAction func buttonUpdate(_ sender: Any) {
         if let t = toDo, let name = textFieldName.text {
-            viewModel.update(id: t.id!, name: name)
+            viewModel.update(toDo: t, name: name)
         }
     }
     

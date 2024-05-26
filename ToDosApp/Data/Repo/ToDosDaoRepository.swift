@@ -9,34 +9,52 @@ import Foundation
 import RxSwift
 
 class ToDosDaoRepository {
-    var toDosList = BehaviorSubject<[ToDos]>(value: [ToDos]())
+    var toDosList = BehaviorSubject<[ToDosModel]>(value: [ToDosModel]())
+    
+    let contex = appDelegate.persistentContainer.viewContext
     
     func save(name:String){
-        print("ToDo Save : \(name)")
+        let toDo = ToDosModel(context: contex)
+        toDo.name = name
+        
+        appDelegate.saveContext()
+        
     }
     
-    func update(id: Int, name:String){
-        print("ToDos Update : \(id) - \(name)")
+    func update(toDo: ToDosModel, name:String){
+        toDo.name = name
+        
+        appDelegate.saveContext()
+       
     }
     
-    func delete(id:Int){
-        print("ToDo Delete : \(id)")
+    func delete(toDo:ToDosModel){
+        contex.delete(toDo)
+        
+        appDelegate.saveContext()
+       
     }
     
     func search(searchText:String){
-        print("ToDo Search : \(searchText)")
+        do {
+            let fr = ToDosModel.fetchRequest()
+            fr.predicate = NSPredicate(format: "name CONTAINS[c]%@", searchText)
+            let list = try contex.fetch(fr)
+            toDosList.onNext(list)//Trigger-Tetikleme
+        } catch{
+            print(error.localizedDescription)
+        }
+        
     }
     
     func loadToDos(){
-        var list = [ToDos]()
-        let toDos1 = ToDos(id: 1, name: "Spor yap")
-        let toDos2 = ToDos(id: 2, name: "Ödev")
-        let toDos3 = ToDos(id: 3, name: "Alışveriş")
-        list.append(toDos1)
-        list.append(toDos2)
-        list.append(toDos3)
-        
-        toDosList.onNext(list)//Trigger-Tetikleme
+        do {
+            let fr = ToDosModel.fetchRequest()
+            let list = try contex.fetch(fr)
+            toDosList.onNext(list)//Trigger-Tetikleme
+        } catch{
+            print(error.localizedDescription)
+        }
 }
 
 }
